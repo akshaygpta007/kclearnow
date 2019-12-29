@@ -1,3 +1,4 @@
+// MOVIES
 export const MOVIES_REQUEST = 'MOVIES_REQUEST';
 export const MOVIES_SUCCESS = 'MOVIES_SUCCESS';
 export const MOVIES_FAILURE = 'MOVIES_FAILURE';
@@ -18,4 +19,11 @@ export const moviesFailure = dispatch => {
     type: MOVIES_FAILURE,
     data: {loading: false},
   });
+};
+
+// SAVE CONTENT
+export const SAVE_MY_CONTENT = 'SAVE_MY_CONTENT';
+
+export const saveMyContent = (dispatch, id) => {
+  dispatch({type: SAVE_MY_CONTENT, data: id});
 };

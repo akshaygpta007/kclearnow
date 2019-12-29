@@ -9,7 +9,7 @@ const movies = (state = defaultState, action) => {
     case MOVIES_FAILURE:
       return {...state, ...action.data};
     default:
-      return defaultState;
+      return state;
   }
 };
 
